@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="principal">
+
+        <header>
+            <h1 id="formulario">Formulario</h1>
+
+            <nav>
+                <ul id="menu-principal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discografia.html">Discografía</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section id="sorteo">
+                <h2>¡Participa del sorteo!</h2>
+                <p>Al completar los datos del formulario estarás participando de un sorteo único para ganarte 4 entradas para ver Bob Marley la película. 
+                    El sorteo comienza el día 09/08/2024 y se realiza el día 10/09/2024. Este sorte es valido únicamente para cines ubicados en la provincia de Buenos Aires.
+                </p>
+
+                <form action="gracias.html" method="POST" enctype="multipart/form-data">
+
+                    <span>Nombre *</span>
+                    <input type="text" name="nombre" required>
+
+                    <span>Apellido</span>
+                    <input type="text" name="apellido">
+
+                    <span>Email *</span>
+                    <input type="email" name="email" placeholder="email@email.com" required>
+
+                    <span>Teléfono *</span>
+                    <input type="tel" name="telefono" required>
+
+                    <span>Indique el día de preferencia para ir al cine</span>
+                    <input type="date" name="dia" min="2024-08-09" max="2024-09-09">
+
+                    <div class="seleccion">
+                        <span>Indique los cines que le queden convenientes respecto a su ubicación (presionando ctrl se puede seleccionar múltiples opciones)</span>
+                        <select name="cines[]" multiple size="7">
+                            <option value="" selected disabled>Seleccione las opciones</option>
+                            <option value="dot">Cinmark Dot</option>
+                            <option value="unicenter">Hoyts Unicenter</option>
+                            <option value="abasto">Hoyts Abasto</option>
+                            <option value="alto-palermo">Cinemark Alto Palermo</option>
+                            <option value="alto-avellaneda">Cinmark Alto Avellaneda</option>
+                            <option value="soleil">Hoyts Soleil</option>
+                        </select>
+                    </div>
+
+                    <div class="archivo">
+                        <span>Ajuntar una foto que contenga los 4 DNI de las personas que verán la película</span>
+                        <input type="file" name="dnis" accept="image/jpeg, image/png">
+                    </div>
+
+                    <span>Dejanos tu mensaje</span>
+                    <textarea name="mensaje"></textarea>
+
+                    <div class="boton-formulario">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li>Alumnos: Rosario Agostina Burs, Fernando Daniel Farías</li>
+                <li>Materia: Maquetado y Desarrollo Web</li>
+                <li>Docente: Mabel García</li>
+                <li>Sitio: TP2 para 1° cuatrimestre</li>
+                <li>Escuela: Da Vinci</li>
+                <li>Año: 2024</li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+</html>

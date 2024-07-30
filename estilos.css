@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: #000;
+    background-image: url(fotos/fondo2.jpg);
+    background-attachment: fixed;
+}
+
+.principal {
+    width: 1280px;
+    margin: auto;
+    background-color: #FCFFE2;
+    padding-bottom: 30px;
+}
+
+#discografia, #home, #formulario {
+    height: 200px;
+    background-color: #000;
+    text-align: center;
+    color: #FCFFE2;
+    padding-top: 100px;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+}
+
+#gracias 
+{
+    text-align: center;
+    color: #006700;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+}
+
+#gracias span{
+    color: #bd0b15;
+}
+
+#discografia {
+    background-image: url(fotos/discografia.jpg);
+}
+
+#home {
+    background-image: url(fotos/fondo-portada.jpg);
+}
+
+#formulario {
+    background-image: url(fotos/formulario.jpg);
+}
+
+h1 span, h2 {
+    color: #bd0b15;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav > ul {
+        background-color: #ffaf45;
+        list-style-type: none;
+        text-align: center;
+}
+
+#menu-principal li {
+    display: inline-block;
+    background-color: #fcffe2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 160px;
+    text-align: center;
+    margin: 20px;
+}
+
+#menu-principal li a, h3 {
+    color: #ffaf45;
+}
+
+#menu-principal li a:hover {
+    color: #bd0b15;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p, a, li {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+p, a, li, h3, h2, form {
+    font-family: 'Roboto';
+}
+
+p > em {
+    font-style: normal;
+}
+
+p > strong {
+    color: #006700;
+}
+
+.centrado {
+    text-align: center;
+}
+
+main {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#foto-biografia, #biografia {
+    display: inline-block;
+}
+
+#biografia {
+    width: 600px;
+    margin-left: 50px;
+}
+
+#foto-biografia {
+    vertical-align: top;
+}
+
+#musica {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding-top: 30px;
+}
+
+#musica p {
+    margin-top: 0;
+}
+
+#musica h3 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    text-align: center;
+}
+
+#su-vida div:last-child {
+    border: solid 2px #006700;
+    margin-top: 40px;
+}
+
+#su-vida div:last-child p {
+    padding: 20px;
+    font-weight: bold;
+    color: #ffaf45;
+    text-align: center;
+}
+
+#su-vida div:nth-of-type(3) {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#su-vida, #exitos, #reggae, #natty, #exodus, #kaya, #uprising, #pelicula {
+    padding-top: 40px;
+}
+
+.ui-state-default a {
+    color: #bd0b15 !important;
+}
+
+.ui-widget-header {
+    background-color: #bd0b15 !important;
+    border: none !important;
+}
+
+#reggae-col-1, #reggae-col-2 
+{
+    display: inline-block;
+    width: 550px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+#reggae-col-2 {
+    vertical-align: top;
+}
+
+footer {
+    border-top: solid 2px #006700;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer li {
+    list-style-type: none;
+    color: #ffaf45;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+#menu-contenedor {
+    position: relative;
+}
+
+#sub-menu {
+    position: absolute;
+    display: none;
+    padding-left: 0;
+    top: 45px;
+}
+
+#sub-menu li {
+    margin: 0;
+    background-color: #bd0b15;
+}
+
+#sub-menu li a{
+    color:#FCFFE2;
+}
+
+#sub-menu li a:hover {
+    color: #ffaf45;
+}
+
+#menu-contenedor:hover #sub-menu {
+    display: block;
+}
+
+#natty, #exodus, #kaya {
+    border-bottom: solid 2px #006700;
+}
+
+.info-album, #natty div:last-child, #exodus div:last-child, #kaya div:last-child, #uprising div:last-child {
+    display: inline-block;
+    width: 400px;
+    margin-left: 150px;
+}
+
+#natty .info-album, #exodus .info-album, #kaya .info-album, #uprising .info-album {
+    vertical-align: top;
+}
+
+#pelicula {
+    padding-bottom: 40px;
+    background-image: url(fotos/silueta-bob.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#acordeon {
+    width: 750px;
+}
+
+form {
+    width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 4px 4px 12px gray;
+}
+
+form span {
+    display: inline-block;
+    width: 350px;
+    vertical-align: top;
+}
+
+input, textarea, select {
+    width: 450px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    outline: none;
+    border: solid 1px #bd0b15;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.seleccion, .archivo
+{
+    margin-bottom: 30px;
+}
+
+.boton-formulario input{
+    width: 150px;
+    margin: 0;
+    background-color: #fcffe2;
+    border-color: #ffaf45;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffaf45;
+}
+
+.boton-formulario input:hover {
+    color:#fcffe2;
+    background-color: #ffaf45;
+}
+
+form .boton-formulario {
+    text-align: center;
+}
+
+#sorteo
+{
+    padding-top: 30px;
+}
+
+#contenedor-gracias
+{
+    height: 600px;
+    background: #fcffe2 url(fotos/silueta-bob-gracias.png) no-repeat 500px 200px;
+
+}
+
+@media screen and (max-width: 800px)
+{
+    
+    body {
+        margin: 0;
+    }
+
+    body, #pelicula
+    {
+        background: none;
+    }
+
+    .principal 
+    {
+        width: 800px;
+    }
+
+    p, a, li
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h3
+    {
+        text-align: center;
+    }
+
+    #biografia, #reggae-col-1, #reggae-col-2, .info-album, #natty div:last-child, #exodus div:last-child, #kaya div:last-child, #uprising div:last-child
+    {
+        margin-left: 0;
+        width: 740px;
+    }
+
+    form 
+    {
+        width: 600px;
+    }
+
+    form span
+    {
+        width: 220px;
+    }
+
+    input, textarea, select
+    {
+        width: 340px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) 
+{
+
+    .principal
+    {
+        width: 480px;
+    }
+
+    p, a, li 
+    {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    h2 
+    {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    #musica 
+    {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    #biografia, #reggae-col-1, #reggae-col-2, .info-album, #natty div:last-child, #exodus div:last-child, #kaya div:last-child, #uprising div:last-child
+    {
+        width: 380px;
+    }
+
+    .nine-mile iframe, #acordeon iframe {
+        width: 350px;
+    }
+
+    #acordeon {
+        width: 430px;
+    }
+
+    form {
+        width: 350px;
+        box-shadow: none;
+    }
+
+    textarea
+    {
+        height: 100px;
+    }
+
+    form span
+    {
+        display: block;
+        text-align: center;
+        width: 300px;
+        padding-bottom: 8px;
+    }
+
+    input, textarea, select
+    {
+        margin-left: 0;
+    }
+
+    #contenedor-gracias
+    {
+        background: none;
+        height: 450px;
+    }
+
+    #natty, #exodus, #kaya {
+        border-bottom: none;
+    }
+
+    #menu-principal
+    {
+        padding: 0;
+    }
+
+    #menu-principal li {
+        width: 140px;
+        margin: 7px;
+        font-size: 18px;
+    }
+
+    #sub-menu li {
+        margin: 0;
+    }
+}
